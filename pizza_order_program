@@ -1,0 +1,25 @@
+bill = 0
+if size == "S":
+    bill = 15
+    print("\nSmall pica")
+elif size == "M":
+    bill = 20
+    print("\nMedium pica")
+elif size == "L":
+    bill = 25
+    print("\nLarge pica")
+else:
+    print("Please choose the size of pica first.")
+
+if add_pepperoni == "Y":
+    print("With pepperoni")
+    if size == "S":
+        bill +=2
+    else:
+        bill +=3
+
+if extra_cheese == "Y":
+    print('With extra cheese')
+    bill +=1
+
+print(f"Your final bill is: ${bill}.\nEnjoy your meal!!!")
